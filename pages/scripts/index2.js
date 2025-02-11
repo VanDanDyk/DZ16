@@ -1,0 +1,3 @@
+let clock = document.querySelector('.clock')
+clock.textContent = `${(new Date).getHours().toString().length < 2 ? `0${(new Date).getHours()}` : (new Date).getHours()}:${(new Date).getMinutes().toString().length < 2 ? `0${(new Date).getMinutes()}` : (new Date).getMinutes()}:${(new Date).getHours().toString().length < 2 ? `0${(new Date).getSeconds()}` : (new Date).getSeconds()}`
+setInterval(() => clock.textContent = `${(new Date).getHours().toString().length < 2 ? `0${(new Date).getHours()}` : (new Date).getHours()}:${(new Date).getMinutes().toString().length < 2 ? `0${(new Date).getMinutes()}` : (new Date).getMinutes()}:${(new Date).getHours().toString().length < 2 ? `0${(new Date).getSeconds()}` : (new Date).getSeconds()}`, 1000)

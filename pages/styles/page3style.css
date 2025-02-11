@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-size: 50px;
+}
+
+.fakeBtn{
+    padding: 5%;
+    position: absolute;
+}
+
+.realBtn{
+    position: absolute;
+    width: 2px;
+    aspect-ratio: 1;
+}
+
+a{
+    display: block;
+    color:white;
+}
